@@ -8,13 +8,6 @@ export default function Home() {
   const imgContainer = useRef()
   const [imgSrc, setImgSrc] = useState('')
 
-  const init = () => {
-    setTimeout(() => {
-      setImgSrc('http://www.lexus.com.cn/sites/all/themes/lexus/templates/models/es/images/es-kv-2880-190605.jpg')
-    }, 2000)
-  }
-
-  useEffect(init)
 
   return (
     <div className={styles.container}>
@@ -28,7 +21,7 @@ export default function Home() {
       <div className={styles.imgContainer} ref={imgContainer}>
         <img src={imgSrc} style={{ width: '1000px' }} />
       </div>
-      <h1>测试页面</h1>
+      <h1>测试页面2</h1>
       <ul>
         <li>React 官方中文文档 – 用于构建用户界面的 JavaScript 库</li>
         <li>React 官方中文文档 – 用于构建用户界面的 JavaScript 库</li>
